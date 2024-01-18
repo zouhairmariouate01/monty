@@ -1,6 +1,9 @@
+#define _POSIX_C_SOURCE 200809L
+
+#include <stdio.h>
+#include <stdlib.h>
 #include "monty.h"
 #include "lists.h"
-
 
 /**
  * monty - helper function for main function
@@ -30,7 +33,7 @@ void monty(args_t *args)
 	while (1)
 	{
 		args->line_number++;
-		get = getlink(&link, &len, data.fptr);
+		get = getline(&line, &len, data.fptr);
 		if (get < 0)
 			break;
 		data.words = strtow(data.line);
