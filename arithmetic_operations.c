@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * add_opcode - adds the top two elements of the stack
+ * add_opcode - Performs addition on the top two elements of the stack
  * @stack: pointer to the head of the stack
  * @line_number: line number in the Monty script
  */
@@ -20,7 +20,7 @@ void add_opcode(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * sub_opcode - subtracts the top element of the stack from the second top
+ * sub_opcode - subrracts the second top element of the stack from the top element
  * @stack: pointer to the head of the stack
  * @line_number: line number in the Monty script
  */
@@ -63,7 +63,7 @@ void div_opcode(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * mul_opcode - multiplies the second top element of the stack with the top
+ * mul_opcode - multiplies the second top element of the stack with the top element
  * @stack: pointer to the head of the stack
  * @line_number: line number in the Monty script
  */
@@ -82,7 +82,7 @@ void mul_opcode(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * mod_opcode - computes the rest of the division of the second top element
+ * mod_opcode - computes the rest of the division of the second top
  * @stack: pointer to the head of the stack
  * @line_number: line number in the Monty script
  */

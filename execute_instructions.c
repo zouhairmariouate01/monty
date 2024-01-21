@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
- * get_operation - select to perform a specific operation
- * @opcode: the opcode operation to be performed
- * Return: pointer to function to perform the opcode
- *				 or NULL if the opcode is invalid
-*/
+ * get_operation - Selects and returns a function to perform a specific operation
+ * @opcode: The opcode operation to be performed
+ * Return: Pointer to the function for the opcode, or NULL if the opcode is invalid
+ */
+
 void (*get_operation(char *opcode))(stack_t **stack, unsigned int line_number)
 {
 	int idx;
@@ -36,7 +36,7 @@ void (*get_operation(char *opcode))(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * execute_operations - execute the operation of the corresponding opcode
+ * execute_operations - Executes the operation corresponding to the provided opcode
  * @file_name: the file name the contains the opcode
  * Return: EXIT_SUCCESS
 */
@@ -78,7 +78,7 @@ int execute_operations(char *file_name)
 }
 
 /**
- * check_mode_comment - checks the mode of stack
+ * check_mode_comment - checks the mode based on tokenized string
  * @tokenized_str: tokenized string
  * Return: 1 for comment or NULL or change mode, 0 if nothing
 */

@@ -1,9 +1,9 @@
 #include "monty.h"
 
 /**
- * push_opcode - Opcode `push` pushes an element to stack in a Monty script
+ * push_opcode - Pushes an element onto the stack in a Monty script
  * @stack: double pointer to the stack structure stack_t
- *         It represents the address of the top element of the stack
+ *         represents the address of the top element of the stack
  * @line_number: line number in the Monty script
  */
 void push_opcode(stack_t **stack, unsigned int line_number)
@@ -31,12 +31,12 @@ void push_opcode(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pall_opcode - Opcode `pall` prints all the value of the
- *               stack in a Monty script
- * @stack: head of double pointer to the stack structure stack_t
- *         It represents the address of the top element of the stack
- * @line_number: line number in the Monty script
+ * pall_opcode - Prints all values of the stack in a Monty script
+ * @stack: Head of double pointer to the stack structure (stack_t)
+ *         Represents the address of the top element of the stack
+ * @line_number: Line number in the Monty script
  */
+
 void pall_opcode(stack_t **stack, unsigned int line_number)
 {
 	UNUSED(line_number);
@@ -48,11 +48,12 @@ void pall_opcode(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pint_opcode - Opcode `pint` prints the top of stack in a Monty script
- * @stack: double pointer to the stack structure stack_t
- *         It represents the address of the top element of the stack
- * @line_number: line number in the Monty script
+ * pint_opcode - Prints the top of the stack in a Monty script
+ * @stack: Double pointer to the stack structure (stack_t)
+ *         Represents the address of the top element of the stack
+ * @line_number: Line number in the Monty script
  */
+
 void pint_opcode(stack_t **stack, unsigned int line_number)
 {
 	if (!stack || !*stack)
@@ -65,11 +66,12 @@ void pint_opcode(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pop_opcode - Opcode `pop` removes the top of stack in a Monty script
- * @stack: double pointer to the stack structure stack_t
- *         It represents the address of the top element of the stack
- * @line_number: line number in the Monty script
+ * pop_opcode - Removes the top of the stack in a Monty script
+ * @stack: Double pointer to the stack structure (stack_t)
+ *         Represents the address of the top element of the stack
+ * @line_number: Line number in the Monty script
  */
+
 void pop_opcode(stack_t **stack, unsigned int line_number)
 {
 	if (!stack || !*stack)
@@ -83,7 +85,7 @@ void pop_opcode(stack_t **stack, unsigned int line_number)
 
 /**
  * nop_opcode - Opcode `nop` do nothing
- * @stack: double pointer to the stack structure stack_t
+ * @stack: double pointer to the stack structure (stack_t)
  *         It represents the address of the top element of the stack
  * @line_number: line number in the Monty script
  */

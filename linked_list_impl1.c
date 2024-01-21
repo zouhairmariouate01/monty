@@ -1,10 +1,11 @@
 #include "monty.h"
 
 /**
- * get_list_length - calculate the number of nodes
- * @head: head of the list
- * Return: number of elements
+ * get_list_length - Calculates the number of nodes in a list
+ * @head: Head of the list
+ * Return: Number of elements in the list
  */
+
 size_t get_list_length(const stack_t *head)
 {
 	const stack_t *current;

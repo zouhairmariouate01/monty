@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * delete_first_node - delete the first node
+ * delete_first_node - delete the first node in a stack
  * @head: pointer to the head of stack
  * Return: address of new head or NULL if empty
  */
@@ -23,9 +23,9 @@ stack_t *delete_first_node(stack_t **head)
 }
 
 /**
- * print_list - prints all the elements of a list
+ * print_list - Display all elements of a list
  * @head: head of the list
- * Return: the number of nodes
+ * Return: Number of nodes in the list
  */
 void print_list(const stack_t *head)
 {

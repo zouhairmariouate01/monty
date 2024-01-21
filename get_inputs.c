@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * open_file - opnens the file
+ * open_file - opnens the file open
  * @file_name: file name
  * Return: FILE pointer of the opened file
 */
@@ -20,7 +20,7 @@ FILE *open_file(char *file_name)
 }
 
 /**
- * read_line - reads line from file using file pointer
+ * read_line - reads a line from a file using a file pointer
  * @buffer_size: size of the buffer
  * Return: number of characters tha have been read or -1 on failure
 */
@@ -37,7 +37,7 @@ ssize_t read_line(size_t *buffer_size)
 
 
 /**
- * tokenize_string - tokenize a string according to a delimiter
+ * tokenize_string - tokenize a string according to a specified  delimiter
  * @delim: space delimiter
  * Return: array of pointer characters to the tokenized string
 */
